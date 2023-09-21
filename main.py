@@ -20,22 +20,12 @@ def col2():
         with st.expander("Input"):
             st.write(payload)
         with st.expander("Output"):
-            count = 0
-            text = ""
-            for i in grammar.split():
-                if (i == "is:"):
-                    k = grammar.split()
-                    j = k.index("is:")
-                    temp = j
-                    while temp-j < len(payload):
-                        text = text+" "+k[j]
-                        j = j+1
-                    count = 1
-                    break
-                if (count == 1):
-                    break
-
-            st.text(text.lstrip("is: "))
+            text = str(grammar)
+            text = text.lstrip(
+                f"Input statement: '{payload}' Corrected statement is: ")
+            text = text.split(" ")
+            text = text[0:len(payload)-1]
+            st.text()
 
 
 def main():
