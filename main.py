@@ -26,7 +26,8 @@ def col2():
                 if (i == "is:"):
                     k = grammar.split()
                     j = k.index("is:")
-                    while grammar.split()[j] != "Input":
+                    temp = j
+                    while temp-j < len(payload):
                         text = text+" "+k[j]
                         j = j+1
                     count = 1
