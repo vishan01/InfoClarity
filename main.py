@@ -20,10 +20,7 @@ def col2():
         with st.expander("Input"):
             st.write(payload)
         with st.expander("Output"):
-            text = str(grammar)
-            text = text.lstrip(
-                f"Input statement: '{payload}' Corrected statement is: ")
-            st.text(text)
+            st.text(grammar)
 
 
 def main():
