@@ -1,7 +1,6 @@
 import streamlit as st
 import summarization as summa
 import grammar as gr
-import api
 st.set_page_config(page_title="InfoClarity", page_icon=":suitcase")
 
 
