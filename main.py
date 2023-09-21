@@ -23,9 +23,7 @@ def col2():
             text = str(grammar)
             text = text.lstrip(
                 f"Input statement: '{payload}' Corrected statement is: ")
-            text = text.split(" ")
-            text = text[0:len(payload)-1]
-            st.text()
+            st.text(text)
 
 
 def main():
